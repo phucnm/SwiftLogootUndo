@@ -1,0 +1,16 @@
+PODS:
+  - SwiftLogootUndo (0.1.0)
+
+DEPENDENCIES:
+  - SwiftLogootUndo (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftLogootUndo:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftLogootUndo: accaa63b0c9b12ef5049890855ec147a3ddf6004
+
+PODFILE CHECKSUM: 56a63999fe17b708bda8a3660c86443c08048d8d
+
+COCOAPODS: 1.5.3

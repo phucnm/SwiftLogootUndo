@@ -1,0 +1,6 @@
+framework module SwiftLogootUndo {
+  umbrella header "SwiftLogootUndo-umbrella.h"
+
+  export *
+  module * { export * }
+}

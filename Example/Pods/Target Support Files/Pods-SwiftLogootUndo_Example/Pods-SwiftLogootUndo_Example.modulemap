@@ -1,0 +1,6 @@
+framework module Pods_SwiftLogootUndo_Example {
+  umbrella header "Pods-SwiftLogootUndo_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
