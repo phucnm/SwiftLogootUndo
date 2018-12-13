@@ -1,6 +1,5 @@
 # SwiftLogootUndo
 
-[![CI Status](https://img.shields.io/travis/phucnm/SwiftLogootUndo.svg?style=flat)](https://travis-ci.org/phucnguyenpr@gmail.com/SwiftLogootUndo)
 [![Version](https://img.shields.io/cocoapods/v/SwiftLogootUndo.svg?style=flat)](https://cocoapods.org/pods/SwiftLogootUndo)
 [![License](https://img.shields.io/cocoapods/l/SwiftLogootUndo.svg?style=flat)](https://cocoapods.org/pods/SwiftLogootUndo)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftLogootUndo.svg?style=flat)](https://cocoapods.org/pods/SwiftLogootUndo)
