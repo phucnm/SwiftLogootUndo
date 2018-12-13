@@ -9,12 +9,12 @@
 import Foundation
 
 public class LogootDoc: CustomStringConvertible {
-    var site: Int = 0
-    var clock: Int = 0
-    var atoms: [String] = []
-    var idTable: [AtomIdentifier] = []
+    public var site: Int = 0
+    public var clock: Int = 0
+    public var atoms: [String] = []
+    public var idTable: [AtomIdentifier] = []
 
-    init() {
+    public init() {
         idTable.append(AtomIdentifier(positions: [Position(digit: 0, site: 0, clock: 0)]))
         idTable.append(AtomIdentifier(positions: [Position(digit: Int.max, site: 0, clock: 0)]))
     }
