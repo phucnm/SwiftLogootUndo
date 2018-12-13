@@ -8,10 +8,10 @@
 
 import Foundation
 
-public struct AtomIdentifier: Comparable, CustomStringConvertible {
-    let positions: [Position]
+public struct AtomIdentifier: Comparable, CustomStringConvertible, Codable {
+    public let positions: [Position]
 
-    init(positions: [Position]) {
+    public init(positions: [Position]) {
         self.positions = positions
     }
 

@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		063025459F12FFCB8522936BA5CF01EB /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = A247BBF0EDFD89893231F7D0EA4DFFB7 /* Position.swift */; };
+		05B0F4D87CBEC602FC23AD59FB328CBF /* Logoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0202818C02C72CA183E72A333EE8D99 /* Logoot.swift */; };
 		06D24C7C28378C41349A50EA914A358F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		08DD13FBB67385DEF46A20C32DB744A7 /* Pods-SwiftLogootUndo_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B982590610B3B69D599B3BEE75EC7B /* Pods-SwiftLogootUndo_Example-dummy.m */; };
-		0F0F9B766D6638E3EFC3199CE8BA2C67 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60A02B8F3C8ABE628AF7D07CE25B845 /* Operation.swift */; };
-		34B5ABAF2DB891B59081FF85B0003889 /* Patch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8082F51E6383A801D1C22BD0DE346DC /* Patch.swift */; };
-		355FC665300279266D66919199E7D171 /* SwiftLogootUndo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7400645A9F1C4612156D1AB40F6D85F /* SwiftLogootUndo-dummy.m */; };
 		4863AFC25221CF18224CB7832F6F7E7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		5A7D7F89D712A085BFEC829EBD1B8DC1 /* SwiftLogootUndo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D27483605FC62681590F6470DA12F590 /* SwiftLogootUndo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A7D7F89D712A085BFEC829EBD1B8DC1 /* SwiftLogootUndo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F99EA7B48C418984E53BBE0F284497C5 /* SwiftLogootUndo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E9619B54F9F006D12E4591DE5FDC456 /* Pods-SwiftLogootUndo_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC273FDEB06ABBCF7F704BD334F9C484 /* Pods-SwiftLogootUndo_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E970B0314CF34258059CCA8AAEFC6DE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E5D0D2E083DAE7708C989688D3D25D /* Extensions.swift */; };
 		600CA4520B252E0EA2B674A8FCF96422 /* Pods-SwiftLogootUndo_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15D6D29E8FFA158F0307A89DBCCF9C4D /* Pods-SwiftLogootUndo_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7BE5708D0BC2F56601AD95F9C0E289C0 /* AtomIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2C5E763FB8B110138C084C9F52BEFF /* AtomIdentifier.swift */; };
+		76A0C76E437E15B2B7AF67645948F229 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6975F475C77A754B5557D74F3E5F7572 /* Position.swift */; };
 		8B31C09E9ECBBCCCDE32594BB7B6F009 /* Pods-SwiftLogootUndo_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E314BD40AD083CAEBCB0EC5325463B99 /* Pods-SwiftLogootUndo_Tests-dummy.m */; };
-		9024BBAF97B17A1E41CE70A20B2F5861 /* Logoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9276C279F9F4C1CFA1F3DC83746B7171 /* Logoot.swift */; };
 		94DA135C9E7639FB2A293D16875E094D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		B1A647E2C427155A6DD8712A4AF2CE21 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4054E91695ABBC71D62C3BD7CA47561 /* Extensions.swift */; };
+		B03083BFC31F106F65C56F907143363C /* SwiftLogootUndo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DE88389F99A87E42BE2F2B0617CAD5 /* SwiftLogootUndo-dummy.m */; };
+		D047AE52B02FD644272979E5DC285E4B /* LogootOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A959922E118F952DF3D396B62FC2BBAA /* LogootOperation.swift */; };
+		ECCCAE7E63339798FBD268E12853A1FF /* Patch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A000C00922AFB10F09549CF4B363270 /* Patch.swift */; };
+		ED9434751AB614A79D8DE87B3B81C0C2 /* AtomIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25BA969136E39F47CB394F3BD20FD2 /* AtomIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,45 +43,45 @@
 
 /* Begin PBXFileReference section */
 		04F0A754C7D8C33DC5854980E5A58C2F /* Pods-SwiftLogootUndo_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftLogootUndo_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		093EF3BCB666B1F273E4C60F17CADBA1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0A448CA967571B721EC14C05896BB0EE /* SwiftLogootUndo.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SwiftLogootUndo.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0AA7DEEA65D3A4BF2A018AD043E84563 /* Pods_SwiftLogootUndo_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftLogootUndo_Example.framework; path = "Pods-SwiftLogootUndo_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C2AC509A5B3ECF684D288F59F7A49B /* Pods_SwiftLogootUndo_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftLogootUndo_Tests.framework; path = "Pods-SwiftLogootUndo_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A10C301528C8CE993B3DFB4C94CF69 /* Pods-SwiftLogootUndo_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftLogootUndo_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		15D6D29E8FFA158F0307A89DBCCF9C4D /* Pods-SwiftLogootUndo_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftLogootUndo_Example-umbrella.h"; sourceTree = "<group>"; };
+		18DE88389F99A87E42BE2F2B0617CAD5 /* SwiftLogootUndo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftLogootUndo-dummy.m"; sourceTree = "<group>"; };
 		1993444D9978B5440A755854F438B500 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D9064717F116C6654E6FC2635EB572C /* SwiftLogootUndo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLogootUndo.xcconfig; sourceTree = "<group>"; };
+		33E5D0D2E083DAE7708C989688D3D25D /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = SwiftLogootUndo/Classes/Extensions.swift; sourceTree = "<group>"; };
 		3B5A7FDF51E587E2F1958BB8340B0A6E /* SwiftLogootUndo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftLogootUndo.framework; path = SwiftLogootUndo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF535D1A324CA439C7232D4091240A7 /* Pods-SwiftLogootUndo_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftLogootUndo_Example-resources.sh"; sourceTree = "<group>"; };
+		4B25BA969136E39F47CB394F3BD20FD2 /* AtomIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomIdentifier.swift; path = SwiftLogootUndo/Classes/AtomIdentifier.swift; sourceTree = "<group>"; };
 		4E3D990E7DCEAA5C1123B327DAD1AACF /* Pods-SwiftLogootUndo_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftLogootUndo_Example.release.xcconfig"; sourceTree = "<group>"; };
 		56C4D3B6EEA596E51DE2AD21580FA478 /* Pods-SwiftLogootUndo_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftLogootUndo_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A000C00922AFB10F09549CF4B363270 /* Patch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Patch.swift; path = SwiftLogootUndo/Classes/Patch.swift; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6975F475C77A754B5557D74F3E5F7572 /* Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Position.swift; path = SwiftLogootUndo/Classes/Position.swift; sourceTree = "<group>"; };
+		7F10913CB93C7A4A1D0A7CE278C1AAE5 /* SwiftLogootUndo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLogootUndo-prefix.pch"; sourceTree = "<group>"; };
 		7FCBF4DFD3EBA5D81E843D5754E584A0 /* Pods-SwiftLogootUndo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftLogootUndo_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		89E13632A890F51455D9CAC220801E03 /* SwiftLogootUndo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftLogootUndo.modulemap; sourceTree = "<group>"; };
+		8BAA5BFF6425307B496396780D34D0D8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		8CCADBE37C9759A39B12C06C802E03B8 /* Pods-SwiftLogootUndo_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftLogootUndo_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9276C279F9F4C1CFA1F3DC83746B7171 /* Logoot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logoot.swift; path = SwiftLogootUndo/Classes/Logoot.swift; sourceTree = "<group>"; };
+		8D97FB656928DC5891073A211AA748F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9B005F37250218FD57F4EFFF516ED753 /* SwiftLogootUndo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLogootUndo.xcconfig; sourceTree = "<group>"; };
-		A247BBF0EDFD89893231F7D0EA4DFFB7 /* Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Position.swift; path = SwiftLogootUndo/Classes/Position.swift; sourceTree = "<group>"; };
+		A0202818C02C72CA183E72A333EE8D99 /* Logoot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logoot.swift; path = SwiftLogootUndo/Classes/Logoot.swift; sourceTree = "<group>"; };
 		A2A82D3774A75F6E4D46822A79619802 /* Pods-SwiftLogootUndo_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftLogootUndo_Example.modulemap"; sourceTree = "<group>"; };
 		A2B982590610B3B69D599B3BEE75EC7B /* Pods-SwiftLogootUndo_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftLogootUndo_Example-dummy.m"; sourceTree = "<group>"; };
-		A4054E91695ABBC71D62C3BD7CA47561 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = SwiftLogootUndo/Classes/Extensions.swift; sourceTree = "<group>"; };
-		A7400645A9F1C4612156D1AB40F6D85F /* SwiftLogootUndo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftLogootUndo-dummy.m"; sourceTree = "<group>"; };
 		A7BE561B68697A1197D91939B6EA4F91 /* Pods-SwiftLogootUndo_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftLogootUndo_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		AB2C5E763FB8B110138C084C9F52BEFF /* AtomIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomIdentifier.swift; path = SwiftLogootUndo/Classes/AtomIdentifier.swift; sourceTree = "<group>"; };
+		A959922E118F952DF3D396B62FC2BBAA /* LogootOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogootOperation.swift; path = SwiftLogootUndo/Classes/LogootOperation.swift; sourceTree = "<group>"; };
 		AC273FDEB06ABBCF7F704BD334F9C484 /* Pods-SwiftLogootUndo_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftLogootUndo_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B220709491257AF508AA25278966A517 /* Pods-SwiftLogootUndo_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftLogootUndo_Example-frameworks.sh"; sourceTree = "<group>"; };
-		B7C8933B8EC64BA40AD4526FF658ED31 /* SwiftLogootUndo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftLogootUndo.modulemap; sourceTree = "<group>"; };
+		B8B2A428B7F80926912E3197D231DEBC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		BE1EE383918E5F6B2FA67D675B94CE60 /* Pods-SwiftLogootUndo_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftLogootUndo_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C9F3CF7536D461EAEB3F7AE2B00E1516 /* SwiftLogootUndo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLogootUndo-prefix.pch"; sourceTree = "<group>"; };
-		D27483605FC62681590F6470DA12F590 /* SwiftLogootUndo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLogootUndo-umbrella.h"; sourceTree = "<group>"; };
 		D307189A95878583F7F7B858C7757692 /* Pods-SwiftLogootUndo_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftLogootUndo_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D43209C2FCA1BFCF8CA8638A93219C0E /* Pods-SwiftLogootUndo_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftLogootUndo_Tests.modulemap"; sourceTree = "<group>"; };
-		D8082F51E6383A801D1C22BD0DE346DC /* Patch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Patch.swift; path = SwiftLogootUndo/Classes/Patch.swift; sourceTree = "<group>"; };
 		E314BD40AD083CAEBCB0EC5325463B99 /* Pods-SwiftLogootUndo_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftLogootUndo_Tests-dummy.m"; sourceTree = "<group>"; };
-		E3433E256D597A26D6FB1F1FA463D957 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		E9D4FD36E6693EA5A381F02C1436A661 /* Pods-SwiftLogootUndo_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftLogootUndo_Tests-resources.sh"; sourceTree = "<group>"; };
 		F41F244F39CF6D994B555EE7D46D8F03 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F60A02B8F3C8ABE628AF7D07CE25B845 /* Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operation.swift; path = SwiftLogootUndo/Classes/Operation.swift; sourceTree = "<group>"; };
-		F9185BF246A0F955D26345340A574637 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FCB27F27BAD06A5C9337F4EAC9344519 /* SwiftLogootUndo.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SwiftLogootUndo.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F99EA7B48C418984E53BBE0F284497C5 /* SwiftLogootUndo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLogootUndo-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,7 @@
 		16CB88E3BDDE3B3945F6032A93E5DA70 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8384B3F451B6F5044E12CB5E3721B884 /* SwiftLogootUndo */,
+				6CED2A79C8650A93A83202D84433DFDB /* SwiftLogootUndo */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -138,6 +138,32 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		6CED2A79C8650A93A83202D84433DFDB /* SwiftLogootUndo */ = {
+			isa = PBXGroup;
+			children = (
+				4B25BA969136E39F47CB394F3BD20FD2 /* AtomIdentifier.swift */,
+				33E5D0D2E083DAE7708C989688D3D25D /* Extensions.swift */,
+				A0202818C02C72CA183E72A333EE8D99 /* Logoot.swift */,
+				A959922E118F952DF3D396B62FC2BBAA /* LogootOperation.swift */,
+				5A000C00922AFB10F09549CF4B363270 /* Patch.swift */,
+				6975F475C77A754B5557D74F3E5F7572 /* Position.swift */,
+				79C79A789DBC2359FF78BB57FD1BB7F5 /* Pod */,
+				AE9250F93E87572BB510930B045DC9EF /* Support Files */,
+			);
+			name = SwiftLogootUndo;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		79C79A789DBC2359FF78BB57FD1BB7F5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B8B2A428B7F80926912E3197D231DEBC /* LICENSE */,
+				8BAA5BFF6425307B496396780D34D0D8 /* README.md */,
+				0A448CA967571B721EC14C05896BB0EE /* SwiftLogootUndo.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -149,30 +175,18 @@
 			);
 			sourceTree = "<group>";
 		};
-		8384B3F451B6F5044E12CB5E3721B884 /* SwiftLogootUndo */ = {
+		AE9250F93E87572BB510930B045DC9EF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AB2C5E763FB8B110138C084C9F52BEFF /* AtomIdentifier.swift */,
-				A4054E91695ABBC71D62C3BD7CA47561 /* Extensions.swift */,
-				9276C279F9F4C1CFA1F3DC83746B7171 /* Logoot.swift */,
-				F60A02B8F3C8ABE628AF7D07CE25B845 /* Operation.swift */,
-				D8082F51E6383A801D1C22BD0DE346DC /* Patch.swift */,
-				A247BBF0EDFD89893231F7D0EA4DFFB7 /* Position.swift */,
-				A0B575AFF7252C8E7B8B44B33A9BDF97 /* Pod */,
-				D673EE0BFD85573A2ED20AADBA2F6E7B /* Support Files */,
+				8D97FB656928DC5891073A211AA748F2 /* Info.plist */,
+				89E13632A890F51455D9CAC220801E03 /* SwiftLogootUndo.modulemap */,
+				2D9064717F116C6654E6FC2635EB572C /* SwiftLogootUndo.xcconfig */,
+				18DE88389F99A87E42BE2F2B0617CAD5 /* SwiftLogootUndo-dummy.m */,
+				7F10913CB93C7A4A1D0A7CE278C1AAE5 /* SwiftLogootUndo-prefix.pch */,
+				F99EA7B48C418984E53BBE0F284497C5 /* SwiftLogootUndo-umbrella.h */,
 			);
-			name = SwiftLogootUndo;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		A0B575AFF7252C8E7B8B44B33A9BDF97 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E3433E256D597A26D6FB1F1FA463D957 /* LICENSE */,
-				093EF3BCB666B1F273E4C60F17CADBA1 /* README.md */,
-				FCB27F27BAD06A5C9337F4EAC9344519 /* SwiftLogootUndo.podspec */,
-			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SwiftLogootUndo";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -199,20 +213,6 @@
 			);
 			name = "Pods-SwiftLogootUndo_Tests";
 			path = "Target Support Files/Pods-SwiftLogootUndo_Tests";
-			sourceTree = "<group>";
-		};
-		D673EE0BFD85573A2ED20AADBA2F6E7B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F9185BF246A0F955D26345340A574637 /* Info.plist */,
-				B7C8933B8EC64BA40AD4526FF658ED31 /* SwiftLogootUndo.modulemap */,
-				9B005F37250218FD57F4EFFF516ED753 /* SwiftLogootUndo.xcconfig */,
-				A7400645A9F1C4612156D1AB40F6D85F /* SwiftLogootUndo-dummy.m */,
-				C9F3CF7536D461EAEB3F7AE2B00E1516 /* SwiftLogootUndo-prefix.pch */,
-				D27483605FC62681590F6470DA12F590 /* SwiftLogootUndo-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SwiftLogootUndo";
 			sourceTree = "<group>";
 		};
 		DC35DD6E0BC866541795483D94DB16FF /* Pods-SwiftLogootUndo_Example */ = {
@@ -277,7 +277,7 @@
 			buildConfigurationList = 6C0ADD67C7771931F99F189025DCA26C /* Build configuration list for PBXNativeTarget "SwiftLogootUndo" */;
 			buildPhases = (
 				CD1C7A0AA2009800E6FAF241BEFF7345 /* Headers */,
-				AB4241C1440CFC3FBFE18EDDA5B2F48E /* Sources */,
+				1B881E88AEBFDEBB558ADA5980071AC8 /* Sources */,
 				97E2F44FFF3D59BB02F4673B97F13193 /* Frameworks */,
 				4C52EE37C74B5CE3798739C9F5E4E67D /* Resources */,
 			);
@@ -381,25 +381,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1B881E88AEBFDEBB558ADA5980071AC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED9434751AB614A79D8DE87B3B81C0C2 /* AtomIdentifier.swift in Sources */,
+				5E970B0314CF34258059CCA8AAEFC6DE /* Extensions.swift in Sources */,
+				05B0F4D87CBEC602FC23AD59FB328CBF /* Logoot.swift in Sources */,
+				D047AE52B02FD644272979E5DC285E4B /* LogootOperation.swift in Sources */,
+				ECCCAE7E63339798FBD268E12853A1FF /* Patch.swift in Sources */,
+				76A0C76E437E15B2B7AF67645948F229 /* Position.swift in Sources */,
+				B03083BFC31F106F65C56F907143363C /* SwiftLogootUndo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A949359BAFF08B762D577669B0424684 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				08DD13FBB67385DEF46A20C32DB744A7 /* Pods-SwiftLogootUndo_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB4241C1440CFC3FBFE18EDDA5B2F48E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7BE5708D0BC2F56601AD95F9C0E289C0 /* AtomIdentifier.swift in Sources */,
-				B1A647E2C427155A6DD8712A4AF2CE21 /* Extensions.swift in Sources */,
-				9024BBAF97B17A1E41CE70A20B2F5861 /* Logoot.swift in Sources */,
-				0F0F9B766D6638E3EFC3199CE8BA2C67 /* Operation.swift in Sources */,
-				34B5ABAF2DB891B59081FF85B0003889 /* Patch.swift in Sources */,
-				063025459F12FFCB8522936BA5CF01EB /* Position.swift in Sources */,
-				355FC665300279266D66919199E7D171 /* SwiftLogootUndo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,7 +465,7 @@
 		};
 		0492985100CFE093AE6910C93FCFAC83 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B005F37250218FD57F4EFFF516ED753 /* SwiftLogootUndo.xcconfig */;
+			baseConfigurationReference = 2D9064717F116C6654E6FC2635EB572C /* SwiftLogootUndo.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -537,7 +537,7 @@
 		};
 		731391C126B02830C32D9A3674B181E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B005F37250218FD57F4EFFF516ED753 /* SwiftLogootUndo.xcconfig */;
+			baseConfigurationReference = 2D9064717F116C6654E6FC2635EB572C /* SwiftLogootUndo.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";

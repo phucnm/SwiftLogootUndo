@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		899E0C7279CED354AD060A56 /* Pods_SwiftLogootUndo_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44212F3EFD850ABEBE3610CB /* Pods_SwiftLogootUndo_Tests.framework */; };
 		A2463BC7ABE87EF79AF1318D /* Pods_SwiftLogootUndo_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63E6AEF80FB6BD35CA31C70 /* Pods_SwiftLogootUndo_Example.framework */; };
+		EA4829A821C2FF9100904424 /* PeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4829A721C2FF9100904424 /* PeerManager.swift */; };
 		EA77AE8F21C1EB1F0052101D /* AtomIdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77AE8821C1EB1C0052101D /* AtomIdentifierTests.swift */; };
 		EA77AE9021C1EB1F0052101D /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77AE8721C1EB1C0052101D /* ExtensionsTests.swift */; };
 		EA77AE9221C1EB1F0052101D /* SwiftLogootTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77AE8921C1EB1C0052101D /* SwiftLogootTests.swift */; };
@@ -47,6 +48,7 @@
 		AE4CF439967E08E7321F248C /* SwiftLogootUndo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftLogootUndo.podspec; path = ../SwiftLogootUndo.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B63E6AEF80FB6BD35CA31C70 /* Pods_SwiftLogootUndo_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLogootUndo_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D567ED5654451F364D4AF708 /* Pods-SwiftLogootUndo_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLogootUndo_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLogootUndo_Example/Pods-SwiftLogootUndo_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EA4829A721C2FF9100904424 /* PeerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerManager.swift; sourceTree = "<group>"; };
 		EA77AE8721C1EB1C0052101D /* ExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
 		EA77AE8821C1EB1C0052101D /* AtomIdentifierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtomIdentifierTests.swift; sourceTree = "<group>"; };
 		EA77AE8921C1EB1C0052101D /* SwiftLogootTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLogootTests.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				EA4829A721C2FF9100904424 /* PeerManager.swift */,
 			);
 			name = "Example for SwiftLogootUndo";
 			path = SwiftLogootUndo;
@@ -342,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA4829A821C2FF9100904424 /* PeerManager.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

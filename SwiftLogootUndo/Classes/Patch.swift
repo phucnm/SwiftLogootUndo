@@ -8,12 +8,12 @@
 
 import Foundation
 
-public struct Patch {
-    let id: String
-    var operations: [Operation]
-    var degree: Int
+public struct Patch: Codable {
+    public let id: String
+    public var operations: [LogootOperation]
+    public var degree: Int
 
-    init(operations: [Operation]) {
+    public init(operations: [LogootOperation]) {
         id = UUID().uuidString
         self.operations = operations
         degree = 0

@@ -8,13 +8,13 @@
 
 import UIKit
 import SwiftLogootUndo
+import MultipeerConnectivity
 
-class ViewController: UIViewController, UITextViewDelegate {
-
+class ViewController: UIViewController, UITextViewDelegate, PeerManagerDelegate {
     let doc = LogootDoc()
     @IBOutlet weak var textView: UITextView!
     let queue = DispatchQueue.init(label: "com.logoot.internalqueue")
-
+    let peerManager = PeerManager()
     //Set this to true to simulate remote insertions.
     let insertionSimulation = false
 
@@ -22,6 +22,13 @@ class ViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         textView.delegate = self
         if insertionSimulation { simulateInsertion() }
+        peerManager.delegate = self
+        peerManager.start()
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        peerManager.stop()
     }
 
     private func simulateInsertion() {
@@ -57,17 +64,37 @@ class ViewController: UIViewController, UITextViewDelegate {
         if let char = text.cString(using: String.Encoding.utf8) {
             let isBackspace = strcmp(char, "\\b")
             if isBackspace == -92 {
-                self.doc.delete(at: range.location)
+                let patch = self.doc.delete(at: range.location)
+                self.peerManager.propagate(patch: patch)
                 print(self.doc.atoms)
                 print(self.doc.idTable)
             } else {
-                self.doc.insert(content: text, at: range.location)
+                let patch = self.doc.insert(content: text, at: range.location)
+                self.peerManager.propagate(patch: patch)
                 print(self.doc.atoms)
                 print(self.doc.idTable)
             }
         }
 
         return true
+    }
+
+    //MARK: PeerManager delegates
+    func peerManager(peerManager: PeerManager, didUpdate peers: [MCPeerID]) {
+        print("Connected peers: \(peers)")
+    }
+
+    func peerManager(peerManager: PeerManager, didReceive patch: Patch, from peer: MCPeerID) {
+        queue.async {
+            self.doc.execute(patch: patch)
+            print(self.doc.atoms)
+            print(self.doc.idTable)
+            let text = self.doc.description
+            DispatchQueue.main.async {
+                self.textView.text = text
+            }
+
+        }
     }
 }
 

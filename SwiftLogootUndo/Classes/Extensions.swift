@@ -68,30 +68,30 @@ public extension Array {
 }
 
 public extension Array where Element == Int {
-    func inRange(p: AtomIdentifier, q: AtomIdentifier) -> Bool {
-        var largerP = false
-        var smallerQ = false
-        for i in 0..<self.count {
-            if largerP && smallerQ {
-                return true
-            }
-            if !largerP && i < p.positions.count {
-                if self[i] < p.positions[i].digit {
-                    return false
-                } else if self[i] > p.positions[i].digit {
-                    largerP = true
-                }
-            }
-            if !smallerQ && i < q.positions.count {
-                if self[i] > q.positions[i].digit {
-                    return false
-                } else if self[i] < q.positions[i].digit {
-                    smallerQ = true
-                }
-            }
-        }
-        return true
+func inRange(p: AtomIdentifier, q: AtomIdentifier) -> Bool {
+  var largerP = false
+  var smallerQ = false
+  for i in 0..<self.count {
+    if largerP && smallerQ {
+      return true
     }
+    if !largerP && i < p.positions.count {
+      if self[i] < p.positions[i].digit {
+        return false
+      } else if self[i] > p.positions[i].digit {
+        largerP = true
+      }
+    }
+    if !smallerQ && i < q.positions.count {
+      if self[i] > q.positions[i].digit {
+        return false
+      } else if self[i] < q.positions[i].digit {
+        smallerQ = true
+      }
+    }
+  }
+  return true
+}
 }
 
 public extension Int {
@@ -106,16 +106,20 @@ public extension Int {
     }
 
     //Private recursive method
-    private func extractDigits(_ initialDigits: [Int], p: AtomIdentifier, q: AtomIdentifier) -> [Int] {
-        var digits = initialDigits
-        let string = NSString(string: String(self))
-        for i in (1...string.length).reversed() {
-            if let digit = Int(string.substring(to: i)),
-                (digits + [digit]).inRange(p: p, q: q) {
-                digits += [digit]
-                return [digit] + (Int(string.substring(from: i))?.extractDigits(digits, p: p, q: q) ?? [])
-            }
-        }
-        return digits
+private func extractDigits(_ initialDigits: [Int],
+                           p: AtomIdentifier,
+                           q: AtomIdentifier) -> [Int] {
+  var digits = initialDigits
+  let string = NSString(string: String(self))
+  for i in (1...string.length).reversed() {
+    if let digit = Int(string.substring(to: i)),
+      (digits + [digit]).inRange(p: p, q: q) {
+      digits += [digit]
+      let tail = Int(string.substring(from: i))
+      let tailDigits = tail?.extractDigits(digits, p: p, q: q) ?? []
+      return [digit] + tailDigits
     }
+  }
+  return digits
+}
 }

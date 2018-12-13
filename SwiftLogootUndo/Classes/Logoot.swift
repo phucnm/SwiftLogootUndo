@@ -23,61 +23,72 @@ public class LogootDoc: CustomStringConvertible {
         return atoms.joined()
     }
 
-    public func insert(content: String) {
+    @discardableResult public func insert(content: String) -> Patch {
         if let id = self.generateLineId(
             p: self.idTable[self.idTable.count - 2],
             q: self.idTable.last!,
             N: 1, boundary: 20,
             site: self.site).first {
-            let ops = [id].map { Operation.insert(id: $0, content: content) }
-            execute(patch: Patch(operations: ops))
+            let ops = [id].map { LogootOperation(id: $0, content: content, type: 0) }
+            let patch = Patch(operations: ops)
+            execute(patch: patch)
+            return patch
         }
+        return Patch(operations: [])
     }
 
-    public func insert(contents: [String], at index: Int) {
+    @discardableResult public func insert(contents: [String], at index: Int) -> Patch {
         let ids = self.generateLineId(p: self.idTable[index], q: self.idTable[index+1], N: contents.count, boundary: 20, site: self.site)
-        var ops = [Operation]()
+        var ops = [LogootOperation]()
         for (idx, id) in ids.enumerated() {
-            ops.append(Operation.insert(id: id, content: contents[idx]))
+            ops.append(LogootOperation(id: id, content: contents[idx], type: 0))
         }
-        execute(patch: Patch(operations: ops))
+        let patch = Patch(operations: ops)
+        execute(patch: patch)
+        return patch
     }
 
-    public func insert(contents: [String]) {
+    @discardableResult public func insert(contents: [String]) -> Patch {
         let ids = self.generateLineId(p: self.idTable[self.idTable.count - 2], q: self.idTable.last!, N: contents.count, boundary: 20, site: self.site)
-        var ops = [Operation]()
+        var ops = [LogootOperation]()
         for (idx, id) in ids.enumerated() {
-            ops.append(Operation.insert(id: id, content: contents[idx]))
+            ops.append(LogootOperation(id: id, content: contents[idx], type: 0))
         }
-        execute(patch: Patch(operations: ops))
+        let patch = Patch(operations: ops)
+        execute(patch: patch)
+        return patch
     }
 
-    public func insert(content: String, at index: Int) {
+    @discardableResult public func insert(content: String, at index: Int) -> Patch {
         if let id = self.generateLineId(p: self.idTable[index], q: self.idTable[index+1], N: 1, boundary: 20, site: self.site).first {
-            let ops = [id].map { Operation.insert(id: $0, content: content) }
-            execute(patch: Patch(operations: ops))
+            let ops = [id].map { LogootOperation(id: $0, content: content, type: 0) }
+            let patch = Patch(operations: ops)
+            execute(patch: patch)
+            return patch
         }
+        return Patch(operations: [])
     }
 
-    public func delete(at index: Int) {
-        self.idTable.remove(at: index + 1)
-        self.atoms.remove(at: index)
+    @discardableResult public func delete(at index: Int) -> Patch {
+        if index + 1 < idTable.count && index < atoms.count {
+            let patch = Patch(operations: [LogootOperation(id: idTable[index + 1], content: atoms[index], type: 1)])
+            execute(patch: patch)
+            return patch
+        }
+        return Patch(operations: [])
     }
 
-    func execute(patch: Patch) {
+    public func execute(patch: Patch) {
         for op in patch.operations {
-            switch op {
-            case .insert(let id, let content):
-                let idx = idTable.insertionIndexOf(elem: id, isOrderedBefore: <)
-                idTable.insert(id, at: idx)
-                atoms.insert(content, at: idx - 1)
-                break
-            case .delete(let id , _):
-                if let idx = binarySearch(idTable, key: id, range: 0..<idTable.count) {
+            if op.type == 0 {
+                let idx = idTable.insertionIndexOf(elem: op.id, isOrderedBefore: <)
+                idTable.insert(op.id, at: idx)
+                atoms.insert(op.content, at: idx - 1)
+            } else if op.type == 1 {
+                if let idx = binarySearch(idTable, key: op.id, range: 0..<idTable.count) {
                     idTable.remove(at: idx)
                     atoms.remove(at: idx - 1)
                 }
-                break
             }
         }
     }
