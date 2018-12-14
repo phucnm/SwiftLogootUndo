@@ -18,6 +18,7 @@
 		EA77AE8F21C1EB1F0052101D /* AtomIdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77AE8821C1EB1C0052101D /* AtomIdentifierTests.swift */; };
 		EA77AE9021C1EB1F0052101D /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77AE8721C1EB1C0052101D /* ExtensionsTests.swift */; };
 		EA77AE9221C1EB1F0052101D /* SwiftLogootTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77AE8921C1EB1C0052101D /* SwiftLogootTests.swift */; };
+		EAD0FB0321C3970D00FA9CFE /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0FB0221C3970D00FA9CFE /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		EA77AE8721C1EB1C0052101D /* ExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
 		EA77AE8821C1EB1C0052101D /* AtomIdentifierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtomIdentifierTests.swift; sourceTree = "<group>"; };
 		EA77AE8921C1EB1C0052101D /* SwiftLogootTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLogootTests.swift; sourceTree = "<group>"; };
+		EAD0FB0221C3970D00FA9CFE /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		F699A6F17CA62067E9C7E20D /* Pods-SwiftLogootUndo_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLogootUndo_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLogootUndo_Tests/Pods-SwiftLogootUndo_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 				EA4829A721C2FF9100904424 /* PeerManager.swift */,
+				EAD0FB0221C3970D00FA9CFE /* StringExtensions.swift */,
 			);
 			name = "Example for SwiftLogootUndo";
 			path = SwiftLogootUndo;
@@ -345,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD0FB0321C3970D00FA9CFE /* StringExtensions.swift in Sources */,
 				EA4829A821C2FF9100904424 /* PeerManager.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,

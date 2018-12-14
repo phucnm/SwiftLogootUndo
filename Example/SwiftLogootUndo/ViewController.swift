@@ -61,20 +61,16 @@ class ViewController: UIViewController, UITextViewDelegate, PeerManagerDelegate 
     }
 
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        if let char = text.cString(using: String.Encoding.utf8) {
-            let isBackspace = strcmp(char, "\\b")
-            if isBackspace == -92 {
-                let patch = self.doc.delete(at: range.location)
-                self.peerManager.propagate(patch: patch)
-                print(self.doc.atoms)
-                print(self.doc.idTable)
-            } else {
-                let patch = self.doc.insert(content: text, at: range.location)
-                self.peerManager.propagate(patch: patch)
-                print(self.doc.atoms)
-                print(self.doc.idTable)
-            }
+        if text.isBackspace() {
+            let patch = self.doc.delete(at: range.location)
+            self.peerManager.propagate(patch: patch)
+            print(self.doc.atoms)
+            print(self.doc.idTable)
         }
+        let patch = self.doc.insert(contents: Array(text).map { String($0) }, at: range.location)
+        self.peerManager.propagate(patch: patch)
+        print(self.doc.atoms)
+        print(self.doc.idTable)
 
         return true
     }
